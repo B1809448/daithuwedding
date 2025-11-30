@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gray-900 text-white py-12 pb-24 md:pb-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

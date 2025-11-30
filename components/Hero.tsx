@@ -56,14 +56,14 @@ export default function Hero({ setActiveSection, isManualScrolling, useBackgroun
     },
   }
 
-  // Mock wedding photos for slide
+  // Wedding photos for slide (local images from public/slides)
+  // Đặt file ảnh của bạn vào thư mục: public/slides
+  // Ví dụ: public/slides/slide-1.jpg, slide-2.jpg, ...
   const slideImages = [
-    'https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&h=1080&fit=crop',
-    'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1920&h=1080&fit=crop',
-    'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1920&h=1080&fit=crop',
-    'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1920&h=1080&fit=crop',
-    'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=1920&h=1080&fit=crop',
-    'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=1920&h=1080&fit=crop',
+    '/slides/slide-1.jpg',
+    '/slides/slide-2.jpg',
+    '/slides/slide-3.jpg',
+    '/slides/slide-4.jpg',
   ]
 
   return (
@@ -103,7 +103,7 @@ export default function Hero({ setActiveSection, isManualScrolling, useBackgroun
               className="h-full"
             />
             {/* Overlay để text dễ đọc hơn */}
-            <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+            <div className="absolute inset-0 bg-black/20 pointer-events-none" />
           </motion.div>
         )}
       </AnimatePresence>
@@ -118,7 +118,7 @@ export default function Hero({ setActiveSection, isManualScrolling, useBackgroun
           variants={itemVariants}
           className="mb-6"
         >
-          <h1 className={`font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-4 ${
+          <h1 className={`font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-4 ${
             useBackground ? 'text-gray-800' : 'text-white'
           }`}>
             Phước Đại & Anh Thư
