@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F4E4BA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C5A028;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="#FDF8F3"/>
+  <!-- Heart shape -->
+  <path d="M50 85 C20 55, 10 35, 30 20 C40 12, 50 20, 50 30 C50 20, 60 12, 70 20 C90 35, 80 55, 50 85Z" 
+        fill="url(#goldGradient)" 
+        stroke="#C5A028" 
+        stroke-width="1"/>
+  <!-- Two interlinked rings -->
+  <ellipse cx="40" cy="45" rx="12" ry="8" fill="none" stroke="#C5A028" stroke-width="3" transform="rotate(-15 40 45)"/>
+  <ellipse cx="60" cy="45" rx="12" ry="8" fill="none" stroke="#D4AF37" stroke-width="3" transform="rotate(15 60 45)"/>
+  <!-- Small diamond on top -->
+  <polygon points="50,18 54,24 50,30 46,24" fill="#F4E4BA" stroke="#C5A028" stroke-width="0.5"/>
+</svg>
+
