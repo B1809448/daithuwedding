@@ -8,6 +8,7 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import ScrollToTop from '@/components/ScrollToTop'
 import BottomNav from '@/components/BottomNav'
+import AudioPlayer from '@/components/AudioPlayer'
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home')
@@ -37,6 +38,7 @@ export default function Home() {
         setActiveSection={setActiveSection}
         isManualScrolling={isManualScrolling}
       />
+      <AudioPlayer src="/audio/wedding-music.mp3" />
     </main>
   )
 }
