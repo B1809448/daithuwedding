@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+  }
+  
+  body {
+    @apply bg-wedding-cream text-gray-800;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
