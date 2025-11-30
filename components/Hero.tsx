@@ -60,10 +60,10 @@ export default function Hero({ setActiveSection, isManualScrolling, useBackgroun
   // Đặt file ảnh của bạn vào thư mục: public/slides
   // Ví dụ: public/slides/slide-1.jpg, slide-2.jpg, ...
   const slideImages = [
-    '/slides/slide-1.jpg',
-    '/slides/slide-2.jpg',
-    '/slides/slide-3.jpg',
-    '/slides/slide-4.jpg',
+    'https://res.cloudinary.com/dol42c3fc/image/upload/v1764479216/slide-2_ttu4hr.jpg',
+    'https://res.cloudinary.com/dol42c3fc/image/upload/v1764478919/slide-1_lirzz0.jpg',
+    'https://res.cloudinary.com/dol42c3fc/image/upload/v1764479207/slide-3_eam4wl.jpg',
+    'https://res.cloudinary.com/dol42c3fc/image/upload/v1764479200/slide-4_rfkdyy.jpg',
   ]
 
   return (
